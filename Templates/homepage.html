@@ -3,7 +3,7 @@
 <head> <h1>Word Counter</h1>
     <meta charset="UTF-8">
     <title>Word Counter</title>
-
+<a href="{% url 'about' %}">About</a>
 </head>
 <body> <form action="{% url 'count' %}">
     <textarea rows ="40" cols = "150" name="fulltext"></textarea>
@@ -12,7 +12,7 @@
 
 
 </form>
-<a href="{% url 'about' %}">About</a>
+
 
 </body>
 </html>

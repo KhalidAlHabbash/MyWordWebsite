@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <h1>Lets Count!</h1>
+<head> <h1>Lets Count!</h1><br/><a href="{% url 'home' %}">Back</a>
+<br/>
+<a href="{% url 'about' %}">About</a>
+
     <meta charset="UTF-8">
     <title>Word Counter</title>
 </head>
@@ -8,9 +11,6 @@
 <h2>In your text there are {{numberofwords}} words</h2>
 <h3> Your text:</h3>
 {{words_used}} <br/>
-<a href="{% url 'home' %}">Back</a>
-<br/>
-<a href="{% url 'about' %}">About</a>
 <br/>
 <h1>Number of times word was repeated:</h1>
 <br/>
